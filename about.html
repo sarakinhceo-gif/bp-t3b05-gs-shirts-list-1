@@ -1,168 +1,397 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>강서 셔츠룸 정보 소개 | 강서 셔츠룸 모음</title>
-  <meta name="description" content="강서 셔츠룸 투명 정찰제 소개 페이지. 우리가 직접 발품 팔아 검증한 내상 제로 꿀통 및 예약 상세 안내 📞 010-6279-0862.">
-  <link rel="canonical" href="https://t3b05-gs-shirts-list-1.pages.dev/about.html">
-  <style>
-    :root {
-      --primary: #090D16;
-      --secondary: #1E293B;
-      --accent: #38BDF8;
-      --bg: #05070C;
-      --text: #F8FAFC;
-      --font: 'Inter', -apple-system, sans-serif;
-    }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: var(--font);
-      line-height: 1.8;
-      letter-spacing: -0.02em;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    .header {
-      backdrop-filter: blur(12px);
-      background: rgba(9, 13, 22, 0.7);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      position: sticky; top:0; z-index:100; padding: 15px 24px;
-    }
-    .header-inner {
-      max-width: 1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;
-    }
-    .logo { font-size:1.3rem; font-weight:900; color:#fff; }
-    .nav { display:flex; gap:20px; font-size:0.9rem; }
-    .nav a { color: rgba(255,255,255,0.7); font-weight:600; }
-    .nav a:hover { color: var(--accent); }
-
-    .hero-sub {
-      padding: 60px 24px; text-align:center; background: linear-gradient(180deg, var(--secondary) 0%, var(--bg) 100%);
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-    .hero-sub h1 { font-size: 2.2rem; font-weight:800; color:#fff; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강서 셔츠룸 모음 소개 | 안심 예약 디렉터 Bro의 양심 고백</title>
+    <meta name="description" content="강서구 화곡동 및 마곡지구 일대에서 덤터기와 바가지를 종식시키고 정찰제 셔츠룸 정보를 공개하는 분석 플랫폼 스토리. 정직한 밤문화를 수호합니다.">
+    <meta name="keywords" content="강서구 셔츠룸 소개, 화곡 룸싸롱 가격 분석, 강서구 가라오케 정찰제, 화곡동 유흥 예약 마스터">
+    <link rel="canonical" href="https://t3b05-gs-shirts-list-1.pages.dev/about.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
     
-    .container { max-width:800px; margin: 0 auto; padding: 60px 24px; }
-    .content-box {
-      background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius:16px;
-      padding: 40px; backdrop-filter: blur(8px);
-    }
-    .content-box h2 { font-size: 1.5rem; color:#fff; margin-bottom:20px; border-left: 4px solid var(--accent); padding-left:12px; }
-    .content-box p { font-size:1.05rem; opacity:0.9; margin-bottom:20px; }
+    <style>
+        :root {
+            --cyber-black: #080503;
+            --cyber-dark: #120b07;
+            --neon-orange: #ff6600;
+            --neon-gold: #ffcc00;
+            --neon-violet: #d946ef;
+            --text-neon: #fffaf0;
+            --text-dim: #a69b92;
+        }
 
-    .price-table {
-      width:100%; border-collapse: collapse; margin-top:30px; margin-bottom:30px;
-    }
-    .price-table th, .price-table td {
-      border: 1px solid rgba(255,255,255,0.08); padding:12px; text-align:left;
-    }
-    .price-table th { background: rgba(255,255,255,0.05); color:#fff; font-weight:700; }
-    .price-table td { font-size:0.95rem; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .cta-box {
-      margin-top: 40px; text-align:center; padding: 30px; background: rgba(56, 189, 248, 0.03);
-      border: 1px dashed var(--accent); border-radius: 12px;
-    }
-    .cta-box h3 { font-size:1.3rem; color:#fff; margin-bottom:12px; }
-    .cta-phone {
-      display:inline-block; font-size:1.5rem; font-weight:900; color:var(--accent); margin-top:10px;
-    }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: var(--cyber-black);
+            color: var(--text-neon);
+            min-height: 100vh;
+            line-height: 1.8;
+            overflow-x: hidden;
+            position: relative;
+        }
 
-    .footer {
-      background: #030407; border-top: 1px solid rgba(255,255,255,0.08); padding: 48px 24px; text-align:center; font-size:0.9rem; opacity:0.8;
-    }
-  </style>
+        /* Scanline Overlay */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 102, 0, 0.04), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.04));
+            z-index: 99999;
+            background-size: 100% 4px, 6px 100%;
+            pointer-events: none;
+        }
+
+        header {
+            width: 100%;
+            background: rgba(18, 11, 7, 0.95);
+            border-bottom: 2px solid var(--neon-orange);
+            box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 5px #fff, 0 0 10px var(--neon-orange), 0 0 20px var(--neon-orange);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-neon);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--neon-gold);
+            text-shadow: 0 0 8px var(--neon-gold);
+        }
+
+        .hotline-btn {
+            background: transparent;
+            border: 2px solid var(--neon-orange);
+            padding: 0.6rem 1.3rem;
+            border-radius: 4px;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(255, 102, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .hotline-btn:hover {
+            background: var(--neon-orange);
+            box-shadow: 0 0 20px rgba(255, 102, 0, 0.8);
+            text-shadow: 0 0 5px #fff;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .page-title h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 10px var(--neon-orange);
+            margin-bottom: 1rem;
+        }
+
+        .page-title p {
+            color: var(--text-dim);
+            font-size: 1.1rem;
+        }
+
+        .cyber-box {
+            background: var(--cyber-dark);
+            border: 2px solid var(--neon-violet);
+            box-shadow: 0 0 20px rgba(217, 70, 239, 0.15);
+            border-radius: 8px;
+            padding: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .cyber-box h2 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 8px var(--neon-orange);
+            border-bottom: 2px solid var(--neon-orange);
+            padding-bottom: 0.5rem;
+        }
+
+        .cyber-box p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .philosophy-card {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 6px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .philosophy-card:hover {
+            border-color: var(--neon-orange);
+            box-shadow: 0 0 10px rgba(255, 102, 0, 0.2);
+        }
+
+        .philosophy-card h3 {
+            font-size: 1.25rem;
+            color: var(--neon-orange);
+            margin-bottom: 1rem;
+            font-weight: 900;
+            text-shadow: 0 0 5px var(--neon-orange);
+        }
+
+        .philosophy-card p {
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }
+
+        /* UGC Reviews Block */
+        .ugc-section {
+            margin-bottom: 4rem;
+        }
+
+        .ugc-section h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 3rem;
+            text-shadow: 0 0 8px var(--neon-orange);
+            color: #fff;
+        }
+
+        .ugc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .ugc-item {
+            background: var(--cyber-dark);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 6px;
+            padding: 2rem;
+            border-left: 4px solid var(--neon-orange);
+        }
+
+        .ugc-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            color: var(--neon-gold);
+            font-weight: 900;
+        }
+
+        .ugc-text {
+            color: #cbd5e1;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .back-link a {
+            color: var(--neon-orange);
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            text-shadow: 0 0 5px rgba(255, 102, 0, 0.2);
+        }
+
+        .back-link a:hover {
+            color: var(--neon-gold);
+            text-shadow: 0 0 8px var(--neon-gold);
+        }
+
+        footer {
+            background: #040201;
+            border-top: 2px solid var(--neon-orange);
+            padding: 3.5rem 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+        }
+
+        .footer-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 8px var(--neon-orange);
+            margin-bottom: 1.1rem;
+            display: inline-block;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--neon-orange);
+        }
+    </style>
 </head>
 <body>
 
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">강서 BRO INFO</a>
-      <nav class="nav">
-        <a href="index.html">홈</a>
-        <a href="about.html">상세정보</a>
-        <a href="blog.html">추천칼럼</a>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <div class="nav-container">
+            <a href="/" class="logo">GS SHIRTS NET</a>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="about.html">소개</a></li>
+                <li><a href="blog.html">블로그</a></li>
+            </ul>
+            <a href="tel:010-6279-0862" class="hotline-btn">접속 시그널</a>
+        </div>
+    </header>
 
-  <section class="hero-sub">
-    <h1>우리를 소개합니다 (ABOUT US)</h1>
-    <p style="margin-top:10px; opacity:0.8;">강서 셔츠룸의 건강하고 투명한 로컬 소비 생태계를 지향합니다.</p>
-  </section>
+    <main>
+        <section class="page-title">
+            <h1>ABOUT SHIRTS PROTOCAL</h1>
+            <p>강서구 직장인들의 개인정보 유출을 차단하는 보안 지킴이 Bro의 다짐</p>
+        </section>
 
-  <main class="container">
-    <div class="content-box">
-      <h2>형들을 위한 100% 내상 제로 다짐</h2>
-      <p>
-    반갑다 형들! 이곳은 강서 밤문화 및 유흥/노래방 꿀통을 투명하게 정찰제로 까놓고 공유하는 '양심 아카이브'다. 
-    우리가 이 업계 정보를 모으기 시작한 이유는 아주 심플해. 돈 좀 쓰러 나가서 양아치 실장들한테 기분 잡치고 오지 말자는 거 하나뿐이다. 
-    나 역시 강서에서 산전수전 다 겪으며 수백만 원 날려본 유경험자로서, 이 바닥이 얼마나 정보의 불균형이 심한지 뼈저리게 느꼈거든. 
-    누구는 10만 원에 노는 걸 누구는 20만 원에 눈탱이 맞고 호구 잡히는 꼴을 더 이상 눈 뜨고 볼 수가 없어서 직접 총대를 멨다.
-    <br><br>
-    우리의 원칙은 단 세 가지다. 
-    첫째, 가격 정보는 사전에 100% 실시간 오픈한다. 
-    둘째, 검증되지 않은 이상한 업소는 소개조차 안 한다. 
-    셋째, 형들의 소중한 개인정보는 단 1도 수집하거나 악용하지 않는다. 
-    우리가 추천하는 모든 파트너십 라인은 사전에 우리가 몇 달간 직접 가보고 서비스 마인드부터 시작해서 수질, 위생 상태까지 현장 검증을 끝낸 곳들뿐이다. 
-    단순히 돈 몇 푼 받고 억지로 올리는 양아치 바이럴 광고 글이랑은 궤를 달리하니까 의심의 여지가 전혀 없을 거다.
-    <br><br>
-    특히 강서 셔츠룸 분야는 워낙 업체들이 자주 바뀌고 트렌드가 빠르게 바뀌는 편이라, 정보의 '신선도'가 엄청 중요해. 
-    지난달에 좋았다고 해서 이번 달에도 무조건 좋으리란 보장이 없는 게 이 동네의 슬픈 현실이거든. 
-    그래서 우린 매주 로컬 모니터링 요원을 통해 서비스 퀄리티가 유지되고 있는지 꼼꼼하게 더블 체크를 돌리고 있어. 
-    만약 조금이라도 불만족스러운 컴플레인이 들어오거나 퀄리티 저하 조짐이 보이면 바로 아카이브에서 배제 처리해 버린다. 
-    형들이 소중한 돈 내고 노는 건데 당연히 최고 대접을 받아야지 않겠냐? 
-    믿고 볼 수 있는 안전 놀이터가 필요하거나 대기 시간 없이 바로 예약하고 싶다면 📞 <strong><a href="tel:010-6279-0862" style="color:#38BDF8; text-decoration:none;">010-6279-0862</a></strong> 여기로 언제든지 톡이나 전화 한 통 날려줘. 친한 동생, 형이라 생각하고 솔직하게 현장 상황 다 불어줄 테니까!
-  </p>
-      
-      <h2 style="margin-top:40px;">대략적인 시세 및 코스 안내</h2>
-      <p>아래 시세표는 강서 셔츠룸 업계 표준 정찰 가격이며, 시간대나 단원 혜택에 따라 약간의 차이가 있을 수 있으니 예약 시 실시간 확인이 제일 빠릅니다.</p>
-      <table class="price-table">
-        <thead>
-          <tr>
-            <th>코스 분류</th>
-            <th>기본 시간</th>
-            <th>정찰 금액</th>
-            <th>특이사항</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>A 코스 (Standard)</strong></td>
-            <td>60분</td>
-            <td>시세가 변동</td>
-            <td>기본 음료 및 기본 룸 이용 포함</td>
-          </tr>
-          <tr>
-            <td><strong>B 코스 (Premium)</strong></td>
-            <td>90분</td>
-            <td>정찰제 할인 적용</td>
-            <td>가장 선호하는 베스트셀러 구성</td>
-          </tr>
-          <tr>
-            <td><strong>VIP 코스 (Special)</strong></td>
-            <td>120분</td>
-            <td>상담 시 우대</td>
-            <td>대형룸 보장 및 고급 음료 서비스</td>
-          </tr>
-        </tbody>
-      </table>
+        <section class="cyber-box">
+            <h2>강서 셔츠룸 가이드의 강력한 익명 보안 철학</h2>
+            <p>형들 안녕. 강서구 화곡동/마곡 일대의 은밀하고 왜곡된 유흥 가격 구조를 혁파해나가는 '보안 마스터 Bro'다. 강서구의 대표적인 비즈니스 밀집 상권인 화곡동과 신흥 IT 밸리 마곡동 먹자골목은 수많은 직장인들이 2차 술자리를 찾는 핵심 거점이지. 하지만 외지인과 비즈니스 접대 수요가 몰리는 지리적 특성을 노려, 말장난 호객 수법으로 폭리를 취하려는 악덕 중개 시스템이 판을 치는 것도 엄연한 팩트야.</p>
+            
+            <p>우리는 단순히 삐끼의 호객 전단지를 나열하는 단순 플랫폼이 아니야. 에드워드 스노든이 미국 국가안보국(NSA)의 불법 도청 및 감시 시스템인 PRISM을 세상을 향해 과감히 폭로했듯, 우리 강서구 셔츠룸 역시 불필요한 번호 노출과 덤터기 계산 장난질을 해킹하고 무력화시켜. 010-6279-0862 다이렉트 핫라인 보안 라인은 형들의 피 같은 유흥 예산을 양아치 삐끼들로부터 완벽하게 엄호하고 지키는 시큐어 방화벽 프로토콜이야.</p>
 
-      <div class="cta-box">
-        <h3>예약 및 내상 방지 가이드 무료 안내</h3>
-        <p>망설이지 말고 편하게 전화해서 물어봐라. 정직하게 팩트만 까발려 준다.</p>
-        <a href="tel:010-6279-0862" class="cta-phone">📞 24시간 실시간 콜: 010-6279-0862</a>
-      </div>
-    </div>
-  </main>
+            <div class="philosophy-grid">
+                <div class="philosophy-card">
+                    <h3>1. 주대 디크립트 (해독)</h3>
+                    <p>현장에서 감정에 휩쓸려 무분별한 추가 요금을 뒤집어쓰지 않도록, 사전에 최종 주대 정찰 가격을 암호화하여 고정 매핑한다.</p>
+                </div>
+                <div class="philosophy-card">
+                    <h3>2. 시큐어 신원 보장</h3>
+                    <p>개인정보가 악성 스팸 브로커 리스트에 연동되지 않도록 철저히 익명성이 보장되는 1대1 다이렉트 핫라인 보안 시스템만 가동한다.</p>
+                </div>
+                <div class="philosophy-card">
+                    <h3>3. 노 바가지 수호</h3>
+                    <p>우리 예약 프로토콜을 통과하는 모든 팀은 불합리한 덤터기로부터 절대 안전하도록 완벽하게 정제된 가격 안심망을 보장받는다.</p>
+                </div>
+            </div>
+        </section>
 
-  <footer class="footer">
-    <p><strong>강서 셔츠룸 안전 아카이브 포털</strong></p>
-    <p>예약 문의 및 실시간 가용 확인: 📞 <a href="tel:010-6279-0862" style="color:var(--accent); font-weight:bold;">010-6279-0862</a></p>
-    <p style="font-size:0.8rem; opacity:0.5; margin-top:20px;">&copy; 2026 강서 BRO. All Rights Reserved.</p>
-  </footer>
+        <section class="ugc-section">
+            <h2>검증 요원들의 리얼 팩트 로그 (UGC)</h2>
+            <div class="ugc-list">
+                <div class="ugc-item">
+                    <div class="ugc-meta">
+                        <span>요원 ID: 화곡역직딩</span>
+                        <span>평점: ★★★★★ | 업종: 셔츠룸 테라피</span>
+                    </div>
+                    <div class="ugc-text">
+                        "화곡동 근처에서 가성비 회식 2차 찾을 때마다 항상 바가지 요금 때문에 곤혹스러웠는데, Bro의 예약 라인을 알고 나서는 든든함 그 자체입니다. 가격을 미리 010-6279-0862 로 확실히 조율하고 가니까 계산할 때 영수증이 정직하게 똑떨어지더군요. 스팸 전화도 싹 사라졌습니다."
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-meta">
+                        <span>요원 ID: 마곡지구연구원</span>
+                        <span>평점: ★★★★★ | 업종: 비즈니스 룸</span>
+                    </div>
+                    <div class="ugc-text">
+                        "010-6279-0862 로 미리 오렌지 예약 신호 세팅해놓고 진입하니 진짜 사기 아이템 바른 것처럼 최상의 시설에서 기분 좋게 비즈니스 모임 성공했습니다. 바가지 씌우던 삐끼들 덤터기 코드를 원천 차단해주는 갓-Bro 시스템입니다."
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-meta">
+                        <span>요원 ID: 강서구네온</span>
+                        <span>평점: ★★★★☆ | 업종: 프라이빗 가라오케</span>
+                    </div>
+                    <div class="ugc-text">
+                        "화려한 일렉트릭 네온 인테리어에 음향 감도 최고였고 무엇보다 추가 덤터기가 일절 없어서 영수증 팩트체크할 때 소름 돋게 흡족했습니다. 앞으로 강서구 회식은 이 루트로 무조건 고정입니다."
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="back-link">
+            <a href="/">← 강서 팩트 대시보드로 복귀</a>
+        </div>
+    </main>
+
+    <footer>
+        <span class="footer-logo">GS SHIRTS NET</span>
+        <p>RESERVATION: 010-6279-0862 (부재시 문자 필)</p>
+        <ul class="footer-links">
+            <li><a href="/">홈</a></li>
+            <li><a href="about.html">소개</a></li>
+            <li><a href="blog.html">블로그</a></li>
+        </ul>
+        <p>© 2026 GS Shirts Net. All rights reserved. 강서 셔츠룸 데이터 정밀 리포트.</p>
+    </footer>
 
 </body>
 </html>
